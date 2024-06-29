@@ -32,7 +32,7 @@ function App(): React.JSX.Element {
             padding: 24,
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Text accessibilityRole="text" style={styles.sectionTitle}>
+          <Text testID="basicsText" style={styles.sectionTitle}>
             The Basics
           </Text>
         </TouchableOpacity>
