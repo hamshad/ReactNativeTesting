@@ -1,0 +1,7 @@
+appId: 'com.reactnativetesting'
+---
+- launchApp
+- assertVisible: 'The Basics'
+- tapOn:
+    text: 'The Basics'
+- stopApp
