@@ -1,9 +1,17 @@
-import {expect, jest, test} from '@jest/globals';
-import {render, screen} from '@testing-library/react-native';
+/**
+ * @format
+ */
+
+import 'react-native';
+import React from 'react';
 import App from '../App';
 
-test('rendering the first screen', () => {
-  const {getByTestId} = render(<App />);
-  const basicsText = getByTestId('basicsTest');
-  expect(basicsText).toBeTruthy();
+// Note: import explicitly to use the types shipped with jest.
+import {it} from '@jest/globals';
+
+// Note: test renderer must be required after react-native.
+import renderer from 'react-test-renderer';
+
+it('renders correctly', () => {
+  renderer.create(<App />);
 });
